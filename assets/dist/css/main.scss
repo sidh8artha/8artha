@@ -488,7 +488,112 @@ section{
 
 .blogs{
 
+    .hero{
+        margin-top: 6.5rem;
+        padding-bottom: 0;
+        // height: 80vh;
+        .design-cover{
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+                border-radius: 5rem;
+            }
+        }
+        .design-title{
+            padding-top: 2rem;
+
+            h1{
+                font-weight: 900;
+                letter-spacing: -0.1rem;
+            }
+            .lead{
+                text-align: center;
+            }
+        }
+    }
+
+    .filter-menu{
+        padding: 1rem 0 3rem 0;
+    }
+
     .blog-card-overlay{
+        background-color: var(--bs-blog);
+        border: 1px solid white;
+        border-radius: 3rem;
+        cursor: pointer;
+        overflow: hidden;
+        .card-body{
+            padding: 2.5rem 2.5rem 0 2.5rem;
+            .card-title{
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+                font-size: large;
+            }
+            .card-subtitle{
+                margin-bottom: 0.5rem;
+                font-size: medium;
+            }
+            .card-text{
+                margin-bottom: 1rem;
+                font-size:medium;
+                height: auto;
+                opacity: 0.5;
+            }
+            .badge{
+                margin-bottom: 0.5rem;
+            }
+            .card-time{
+                margin-bottom: 0rem;
+            }
+        }
+        .card-footer{
+            border: 0px;
+            padding: 0 2.5rem 1.5rem 2.5rem;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            a{
+                color: inherit;
+                text-decoration-color: inherit ;
+            }
+        }
+    }
+}
+
+.books{
+
+    .hero{
+        margin-top: 6.5rem;
+        padding-bottom: 0;
+        // height: 80vh;
+        .design-cover{
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+                border-radius: 5rem;
+            }
+        }
+        .design-title{
+            padding-top: 2rem;
+
+            h1{
+                font-weight: 900;
+                letter-spacing: -0.1rem;
+            }
+            .lead{
+                text-align: center;
+            }
+        }
+    }
+
+    .filter-menu{
+        padding: 1rem 0 3rem 0;
+    }
+
+    .books-card-overlay{
         background-color: var(--bs-blog);
         border: 1px solid white;
         border-radius: 3rem;

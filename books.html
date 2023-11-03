@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <title>sidh8artha | UX Designer</title>
+    <title>sidh8artha | Book & Reviews</title>
 
     <!-- Bootstrao Core CSS -->
     <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
@@ -40,7 +40,7 @@
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <ul class="navbar-nav me-auto mb-2">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.html">Home</a>
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="designs.html">Designs</a>
@@ -49,7 +49,7 @@
                                     <a class="nav-link" href="blogs.html">Blogs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="books.html">Reviews</a>
+                                    <a class="nav-link active" href="books.html">Reviews</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="about.html">About</a>
@@ -68,18 +68,172 @@
         </nav>
     </header>
 
-    <main>
+    <main class="books">
 
         <section class="hero text-center">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 hero-title">
-                        <h1 class="display-1">I'm Siddharth</h1>
-                        <p class="lead"><span>UIUX Designer,</span> Author, Engineer, Explorer, & Father</p>
-                    </div>
-                    <div class="col-md-8 hero-cover">
+                    <!-- <div class="col-md-8 design-cover">
                         <img src="assets/images/IMG20221027185112.jpg" alt="">
+                    </div> -->
+                    <div class="col-md-10 design-title">
+                        <h1 class="display-4">Acquire . Feast On</h1>
+                        <p class="lead">How great writers explained the amazing world, and How you can enjoy it.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-0">
+            <div class="container">
+                <div class="filter-menu">
+                    <ul class="nav nav-underline justify-content-center">
+                        <li class=" nav-item">
+                            <a class="nav-link filter-link active" aria-current="page" data-filter="all">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" data-filter="brand">Brand Identity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" data-filter="web">Web Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" data-filter="app">App Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" data-filter="logo">Logo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" data-filter="prod">Product Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link filter-link" data-filter="art">Cover & Art</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                    <div class="col design-card app anime-single reveal">
+                        <div class="card blog-card-overlay h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Name</h5>
+                                <p class="card-subtitle">Author Name</p>
+                                <p class="card-text">
+                                    Yes! It is a daily routine in the world heritage site of Ajanta Caves. The
+                                    magnificent and most beautiful Buddhist cave temple in India. The protected monument
+                                    hosts roughly 30 caves which are totally artificial carved during two distinct
+                                    periods of Indian history.
+                                </p>
+                                <small class="badge t-web">App</small>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-time">No of pages</p>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col design-card prod anime-single reveal">
+                        <div class="card blog-card-overlay h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Name</h5>
+                                <p class="card-subtitle">Author Name</p>
+                                <p class="card-text">
+                                    Yes! It is a daily routine in the world heritage site of Ajanta Caves. The
+                                    magnificent and most beautiful Buddhist cave temple in India. The protected monument
+                                    hosts roughly 30 caves which are totally artificial carved during two distinct
+                                    periods of Indian history.
+                                </p>
+                                <small class="badge t-web">Product</small>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-time">No of pages</p>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col design-card web anime-single reveal">
+                        <div class="card blog-card-overlay h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Name</h5>
+                                <p class="card-subtitle">Author Name</p>
+                                <p class="card-text">
+                                    Yes! It is a daily routine in the world heritage site of Ajanta Caves. The
+                                    magnificent and most beautiful Buddhist cave temple in India. The protected monument
+                                    hosts roughly 30 caves which are totally artificial carved during two distinct
+                                    periods of Indian history.
+                                </p>
+                                <small class="badge t-web">Web</small>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-time">No of pages</p>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col design-card brand anime-single reveal">
+                        <div class="card blog-card-overlay h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Name</h5>
+                                <p class="card-subtitle">Author Name</p>
+                                <p class="card-text">
+                                    Yes! It is a daily routine in the world heritage site of Ajanta Caves. The
+                                    magnificent and most beautiful Buddhist cave temple in India. The protected monument
+                                    hosts roughly 30 caves which are totally artificial carved during two distinct
+                                    periods of Indian history.
+                                </p>
+                                <small class="badge t-web">Brand</small>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-time">No of pages</p>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col design-card logo anime-single reveal">
+                        <div class="card blog-card-overlay h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Name</h5>
+                                <p class="card-subtitle">Author Name</p>
+                                <p class="card-text">
+                                    Yes! It is a daily routine in the world heritage site of Ajanta Caves. The
+                                    magnificent and most beautiful Buddhist cave temple in India. The protected monument
+                                    hosts roughly 30 caves which are totally artificial carved during two distinct
+                                    periods of Indian history.
+                                </p>
+                                <small class="badge t-web">Logo</small>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-time">No of pages</p>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col blog-card art anime-single reveal">
+                        <div class="card blog-card-overlay h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Book Name</h5>
+                                <p class="card-subtitle">Author Name</p>
+                                <p class="card-text">
+                                    Yes! It is a daily routine in the world heritage site of Ajanta Caves. The
+                                    magnificent and most beautiful Buddhist cave temple in India. The protected monument
+                                    hosts roughly 30 caves which are totally artificial carved during two distinct
+                                    periods of Indian history.
+                                </p>
+                                <small class="badge t-web">Art</small>
+                            </div>
+                            <div class="card-footer">
+                                <p class="card-time">No of pages</p>
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>

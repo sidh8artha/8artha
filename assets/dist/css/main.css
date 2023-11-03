@@ -426,6 +426,30 @@ section .section-side .section-title {
   transition: all 0.8s ease;
 }
 
+.blogs .hero {
+  margin-top: 6.5rem;
+  padding-bottom: 0;
+}
+.blogs .hero .design-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 5rem;
+}
+.blogs .hero .design-title {
+  padding-top: 2rem;
+}
+.blogs .hero .design-title h1 {
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+}
+.blogs .hero .design-title .lead {
+  text-align: center;
+}
+.blogs .filter-menu {
+  padding: 1rem 0 3rem 0;
+}
 .blogs .blog-card-overlay {
   background-color: var(--bs-blog);
   border: 1px solid white;
@@ -466,6 +490,74 @@ section .section-side .section-title {
   background-color: transparent;
 }
 .blogs .blog-card-overlay .card-footer a {
+  color: inherit;
+  text-decoration-color: inherit;
+}
+
+.books .hero {
+  margin-top: 6.5rem;
+  padding-bottom: 0;
+}
+.books .hero .design-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 5rem;
+}
+.books .hero .design-title {
+  padding-top: 2rem;
+}
+.books .hero .design-title h1 {
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+}
+.books .hero .design-title .lead {
+  text-align: center;
+}
+.books .filter-menu {
+  padding: 1rem 0 3rem 0;
+}
+.books .books-card-overlay {
+  background-color: var(--bs-blog);
+  border: 1px solid white;
+  border-radius: 3rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.books .books-card-overlay .card-body {
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+.books .books-card-overlay .card-body .card-title {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: large;
+}
+.books .books-card-overlay .card-body .card-subtitle {
+  margin-bottom: 0.5rem;
+  font-size: medium;
+}
+.books .books-card-overlay .card-body .card-text {
+  margin-bottom: 1rem;
+  font-size: medium;
+  height: auto;
+  opacity: 0.5;
+}
+.books .books-card-overlay .card-body .badge {
+  margin-bottom: 0.5rem;
+}
+.books .books-card-overlay .card-body .card-time {
+  margin-bottom: 0rem;
+}
+.books .books-card-overlay .card-footer {
+  border: 0px;
+  padding: 0 2.5rem 1.5rem 2.5rem;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.books .books-card-overlay .card-footer a {
   color: inherit;
   text-decoration-color: inherit;
 }
