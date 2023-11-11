@@ -16,7 +16,7 @@
   --bs-blog: #E1EA87;
   --bs-company: #0A80DA;
   --bs-smoke:#efefef;
-  --bs-overlay-black: #00000077;
+  --bs-overlay-black: #000000;
   --bs-gray: #aaaaaa;
 }
 
@@ -29,7 +29,6 @@ body {
 body .badge {
   font-weight: 100;
   padding: 0.5rem 1rem;
-  border-radius: 1rem;
 }
 body .card {
   background-color: transparent;
@@ -96,6 +95,10 @@ header .navbar {
 header .navbar .navbar-brand {
   font-weight: 900;
   word-spacing: 2rem;
+}
+header .navbar .navbar-brand:hover, header .navbar .navbar-brand:focus {
+  color: var(--bs-primary);
+  text-decoration: none;
 }
 header .navbar .navbar-toggler {
   outline: 0;
@@ -188,43 +191,20 @@ section .section-side .section-title {
   text-decoration-line: underline;
   text-decoration-color: var(--bs-primary);
 }
+.hero .hero-lead {
+  padding: 1rem 0 2rem 0;
+}
 .hero .hero-cover img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 80vh;
-  border-radius: 5rem;
 }
 
-.about .hero {
-  margin-top: 6.5rem;
-}
-.about .hero .about-cover img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 50vh;
-  border-radius: 5rem;
-}
-.about .hero .about-title {
-  padding-top: 2rem;
-}
-.about .hero .about-title h1 {
-  font-weight: 900;
-  letter-spacing: -0.1rem;
-}
-.about .hero .about-title .lead {
-  text-align: center;
-}
-.about .hero .about-title .lead span {
-  text-decoration-line: underline;
-  text-decoration-color: var(--bs-primary);
-}
 .about .company .company-card {
   background-color: var(--bs-smoke);
   padding: 1.5rem;
   border: 1px solid white;
-  border-radius: 2rem;
   cursor: pointer;
   transition: all 2s ease;
 }
@@ -287,7 +267,6 @@ section .section-side .section-title {
   padding: 0rem;
   padding-bottom: 2rem;
   border: 0px solid white;
-  border-radius: 2rem;
   cursor: pointer;
 }
 .about .skill .skill-card .card-body {
@@ -319,7 +298,6 @@ section .section-side .section-title {
 .about .education .edu-card {
   padding: 0rem;
   border: 1px solid var(--bs-blog);
-  border-radius: 2rem;
   overflow: hidden;
   cursor: pointer;
   transition: all 1s ease;
@@ -349,139 +327,124 @@ section .section-side .section-title {
   font-size: small;
 }
 
-.designs .hero {
+.folio .hero {
   margin-top: 6.5rem;
   padding-bottom: 0;
 }
-.designs .hero .design-cover img {
+.folio .hero .design-cover img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: auto;
-  border-radius: 5rem;
 }
-.designs .hero .design-title {
+.folio .hero .design-title {
   padding-top: 2rem;
 }
-.designs .hero .design-title h1 {
+.folio .hero .design-title h1 {
   font-weight: 900;
   letter-spacing: -0.1rem;
 }
-.designs .hero .design-title .lead {
+.folio .hero .design-title .lead {
   text-align: center;
 }
-.designs .filter-menu {
+.folio .filter-menu {
   padding: 1rem 0 3rem 0;
 }
-.designs .design-card-overlay {
+.folio .design-card-overlay {
   background-color: var(--bs-smoke);
-  border-radius: 3rem;
+  border-radius: 0px;
   cursor: pointer;
   overflow: hidden;
   transition: all 2s ease;
 }
-.designs .design-card-overlay .card-img-wrapper {
-  background-color: var(--bs-primary);
+.folio .design-card-overlay .card-img-wrapper {
+  background-color: var(--bs-overlay-black);
+  border-radius: 0px;
   overflow: hidden;
   transition: all 0.8s ease;
 }
-.designs .design-card-overlay .card-img-wrapper .card-img {
+.folio .design-card-overlay .card-img-wrapper .card-img {
+  border-radius: 0px;
   width: 100%;
   height: 20rem;
   transition: 0.8s;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.designs .design-card-overlay .card-img-wrapper .card-img img {
+.folio .design-card-overlay .card-img-wrapper .card-img img {
   overflow: hidden;
 }
-.designs .design-card-overlay .card-img-overlay {
-  background-color: var(--bs-primary-50);
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
+.folio .design-card-overlay .card-img-overlay {
   padding: 2.5rem 2rem;
+  border-radius: 0px;
   opacity: 0;
   transition: all 0.8s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: var(--bs-primary-10);
 }
-.designs .design-card-overlay .card-img-overlay .card-title {
+.folio .design-card-overlay .card-img-overlay .card-title {
   font-weight: 600;
   font-size: x-large;
 }
-.designs .design-card-overlay .card-img-overlay .card-text {
+.folio .design-card-overlay .card-img-overlay .card-text {
   font-size: medium;
 }
-.designs .design-card-overlay .card-img-overlay .card-tag {
+.folio .design-card-overlay .card-img-overlay .card-tag {
+  background-color: var(--bs-smoke);
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
+  color: var(--bs-overlay-black);
 }
-.designs .design-card-overlay .card-img-overlay a {
+.folio .design-card-overlay .card-img-overlay a {
   color: inherit;
   text-decoration-color: inherit;
 }
-.designs .design-card-overlay:hover .card-img-overlay {
+.folio .design-card-overlay:hover .card-img-wrapper .card-img {
+  opacity: 0.3;
+  transition: 0.8s;
+  transform: scale(2);
+}
+.folio .design-card-overlay:hover .card-img-wrapper .card-img img {
+  transform: scale(2) rotate(20deg);
+}
+.folio .design-card-overlay:hover .card-img-overlay {
   opacity: 1;
   transition: all 0.8s ease;
 }
-
-.blogs .hero {
-  margin-top: 6.5rem;
-  padding-bottom: 0;
-}
-.blogs .hero .design-cover img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: auto;
-  border-radius: 5rem;
-}
-.blogs .hero .design-title {
-  padding-top: 2rem;
-}
-.blogs .hero .design-title h1 {
-  font-weight: 900;
-  letter-spacing: -0.1rem;
-}
-.blogs .hero .design-title .lead {
-  text-align: center;
-}
-.blogs .filter-menu {
-  padding: 1rem 0 3rem 0;
-}
-.blogs .blog-card-overlay {
+.folio .blog-card-overlay {
   background-color: var(--bs-blog);
   border: 1px solid white;
-  border-radius: 3rem;
   cursor: pointer;
   overflow: hidden;
 }
-.blogs .blog-card-overlay .card-body {
+.folio .blog-card-overlay .card-body {
   padding: 2.5rem 2.5rem 0 2.5rem;
 }
-.blogs .blog-card-overlay .card-body .card-title {
+.folio .blog-card-overlay .card-body .card-title {
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: large;
 }
-.blogs .blog-card-overlay .card-body .card-subtitle {
+.folio .blog-card-overlay .card-body .card-subtitle {
   margin-bottom: 0.5rem;
   font-size: medium;
 }
-.blogs .blog-card-overlay .card-body .card-text {
+.folio .blog-card-overlay .card-body .card-text {
   margin-bottom: 1rem;
   font-size: medium;
   height: auto;
   opacity: 0.5;
 }
-.blogs .blog-card-overlay .card-body .badge {
+.folio .blog-card-overlay .card-body .badge {
   margin-bottom: 0.5rem;
 }
-.blogs .blog-card-overlay .card-body .card-time {
+.folio .blog-card-overlay .card-body .card-time {
   margin-bottom: 0rem;
 }
-.blogs .blog-card-overlay .card-footer {
+.folio .blog-card-overlay .card-footer {
   border: 0px;
   padding: 0 2.5rem 1.5rem 2.5rem;
   margin-bottom: 0;
@@ -489,67 +452,41 @@ section .section-side .section-title {
   justify-content: space-between;
   background-color: transparent;
 }
-.blogs .blog-card-overlay .card-footer a {
+.folio .blog-card-overlay .card-footer a {
   color: inherit;
   text-decoration-color: inherit;
 }
-
-.books .hero {
-  margin-top: 6.5rem;
-  padding-bottom: 0;
-}
-.books .hero .design-cover img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: auto;
-  border-radius: 5rem;
-}
-.books .hero .design-title {
-  padding-top: 2rem;
-}
-.books .hero .design-title h1 {
-  font-weight: 900;
-  letter-spacing: -0.1rem;
-}
-.books .hero .design-title .lead {
-  text-align: center;
-}
-.books .filter-menu {
-  padding: 1rem 0 3rem 0;
-}
-.books .books-card-overlay {
+.folio .books-card-overlay {
   background-color: var(--bs-blog);
   border: 1px solid white;
-  border-radius: 3rem;
   cursor: pointer;
   overflow: hidden;
 }
-.books .books-card-overlay .card-body {
+.folio .books-card-overlay .card-body {
   padding: 2.5rem 2.5rem 0 2.5rem;
 }
-.books .books-card-overlay .card-body .card-title {
+.folio .books-card-overlay .card-body .card-title {
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: large;
 }
-.books .books-card-overlay .card-body .card-subtitle {
+.folio .books-card-overlay .card-body .card-subtitle {
   margin-bottom: 0.5rem;
   font-size: medium;
 }
-.books .books-card-overlay .card-body .card-text {
+.folio .books-card-overlay .card-body .card-text {
   margin-bottom: 1rem;
   font-size: medium;
   height: auto;
   opacity: 0.5;
 }
-.books .books-card-overlay .card-body .badge {
+.folio .books-card-overlay .card-body .badge {
   margin-bottom: 0.5rem;
 }
-.books .books-card-overlay .card-body .card-time {
+.folio .books-card-overlay .card-body .card-time {
   margin-bottom: 0rem;
 }
-.books .books-card-overlay .card-footer {
+.folio .books-card-overlay .card-footer {
   border: 0px;
   padding: 0 2.5rem 1.5rem 2.5rem;
   margin-bottom: 0;
@@ -557,16 +494,122 @@ section .section-side .section-title {
   justify-content: space-between;
   background-color: transparent;
 }
-.books .books-card-overlay .card-footer a {
+.folio .books-card-overlay .card-footer a {
   color: inherit;
   text-decoration-color: inherit;
+}
+
+.case .case-hero {
+  margin-top: 5.5rem;
+  padding-bottom: 0;
+}
+.case .case-hero .case-title {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 3rem;
+}
+.case .case-hero .case-title .lead {
+  text-align: center;
+}
+.case .case-hero .case-title .lead span {
+  text-decoration-line: underline;
+  text-decoration-color: var(--bs-primary);
+}
+.case .case-hero .case-lead {
+  padding: 1rem 0 2rem 0;
+}
+.case .case-hero .case-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 80vh;
+}
+.case .flow {
+  padding-top: 0;
+}
+.case .flow .flow-heading {
+  display: flex;
+  justify-content: center;
+}
+.case .flow .flow-heading .h2-light {
+  font-size: larger;
+  color: var(--bs-primary-10);
+}
+.case .flow .flow-heading .h2-dark {
+  font-size: larger;
+  color: var(--bs-overlay-black);
+}
+.case .flow ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+.case .flow .spacer {
+  padding: 2rem 0;
+}
+.case .flow .cover-images .img-large {
+  padding: 2rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.case .flow .cover-images .img-large img {
+  height: 28rem;
+}
+.case .flow .cover-images .img-large .h3-light {
+  font-size: medium;
+  color: var(--bs-primary-10);
+}
+.case .flow .cover-images .img-large .h3-dark {
+  font-size: medium;
+  color: var(--bs-overlay-black);
+}
+.case .flow .cover-images .img-medium {
+  padding: 2rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.case .flow .cover-images .img-medium img {
+  height: 20rem;
+}
+.case .flow .cover-images .img-medium .h3-light {
+  font-size: medium;
+  color: var(--bs-primary-10);
+}
+.case .flow .cover-images .img-medium .h3-dark {
+  font-size: medium;
+  color: var(--bs-overlay-black);
+}
+.case .flow .cover-images .img-small {
+  padding: 2rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1rem;
+}
+.case .flow .cover-images .img-small img {
+  height: 12rem;
+}
+.case .flow .cover-images .img-small .h3-light {
+  font-size: medium;
+  color: var(--bs-primary-10);
+}
+.case .flow .cover-images .img-small .h3-dark {
+  font-size: medium;
+  color: var(--bs-overlay-black);
 }
 
 .meets .meet-card {
   background-color: var(--bs-smoke);
   padding: 0rem;
   border: 1px solid white;
-  border-radius: 2rem;
+  border-radius: 0px;
   overflow: hidden;
   cursor: pointer;
   transition: all 1s ease;
@@ -587,7 +630,6 @@ section .section-side .section-title {
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5rem;
-  border-radius: 2rem;
   transition: 1s;
 }
 .meets .meet-card .card-body .card-icon i {
@@ -611,7 +653,7 @@ section .section-side .section-title {
   padding: 2rem;
   cursor: pointer;
   text-align: center;
-  border-radius: 2rem;
+  border-radius: 0px;
   transition: 0.8s;
 }
 .socials .social-card .card-body i {
@@ -634,7 +676,6 @@ section .section-side .section-title {
   bottom: 2rem;
   width: 3rem;
   height: 3rem;
-  border-radius: 2rem;
   transition: all 0.4s;
   background-color: var(--bs-smoke);
 }
@@ -669,7 +710,6 @@ section .section-side .section-title {
 }
 .modal .modal-dialog .modal-content {
   background-color: var(--bs-smoke);
-  border-radius: 1rem;
   border: 0;
 }
 .modal .modal-dialog .modal-content .modal-header {
@@ -683,7 +723,6 @@ section .section-side .section-title {
   background-color: var(--bs-smoke);
   padding: 1.5rem;
   border: 1px solid white;
-  border-radius: 2rem;
   cursor: pointer;
   transition: all 2s ease;
 }
@@ -748,13 +787,35 @@ section .section-side .section-title {
 @media screen and (max-width: 992px) {
   .hero .hero-cover img {
     height: 75vh;
-    border-radius: 3rem;
+  }
+  .case .flow .spacer {
+    padding: 1.5rem 0;
+  }
+  .case .flow .cover-images .img-large {
+    padding: 2rem 0 0 0;
+  }
+  .case .flow .cover-images .img-large img {
+    height: 16rem;
+  }
+  .case .flow .cover-images .img-medium {
+    padding: 2rem 0 0 0;
+  }
+  .case .flow .cover-images .img-medium img {
+    height: 12rem;
+  }
+  .case .flow .cover-images .img-small {
+    padding: 2rem 0 0 0;
+  }
+  .case .flow .cover-images .img-small img {
+    height: 8rem;
   }
 }
 @media screen and (max-width: 768px) {
   .hero .hero-cover img {
     height: 70vh;
-    border-radius: 3rem;
+  }
+  .case .flow .spacer {
+    padding: 1rem 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -765,8 +826,14 @@ section .section-side .section-title {
     font-size: large;
     margin-bottom: 1.5rem;
   }
-  .hero .hero-cover img {
-    border-radius: 3rem;
+  .case .flow .cover-images .img-large {
+    padding: 1rem 0 0 0;
+  }
+  .case .flow .cover-images .img-medium {
+    padding: 1rem 0 0 0;
+  }
+  .case .flow .cover-images .img-small {
+    padding: 1rem 0 0 0;
   }
 }
 @media screen and (max-width: 390px) {
@@ -775,7 +842,6 @@ section .section-side .section-title {
   }
   .hero .hero-cover img {
     height: 50vh;
-    border-radius: 2rem;
   }
   .meets .meet-card .card-body .card-icon i {
     font-size: 1.5rem;
