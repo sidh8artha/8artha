@@ -5,6 +5,8 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
   box-sizing: border-box;
 }
 
@@ -23,9 +25,13 @@
 }
 
 body{
-    margin: 0;
     height: auto;    
     font-family: var(--bs-font);
+    width: 100%;
+    background-color: papayawhip; 
+    margin: 0 auto;
+    overflow-x: hidden;
+
 
     background-color: var(--bs-smoke);
 
@@ -104,6 +110,17 @@ body{
     .hide {
         display: none;
     } 
+
+    .font-lighter{font-weight: 200!important}
+    .font-light{font-weight:300!important}
+    .font-normal{font-weight:500!important}
+    .font-bold{font-weight:700!important}
+    .font-bolder{font-weight:900!important}
+
+    .font-small{font-size: small;}
+    .font-medium{font-size: medium;}
+    .font-large{font-size: large;}
+    .font-larger{font-size:x-large;}
 }
 
 header{
@@ -528,7 +545,7 @@ section{
         }
     }
 
-    .books-card-overlay{
+    .book-card-overlay{
         background-color: var(--bs-blog);
         border: 1px solid white;
         // border-radius: 2px;
@@ -599,6 +616,10 @@ section{
             padding: 1rem 0 2rem 0;
         }
 
+        .case-divider{
+            padding: 2rem 0;
+        }
+
         .case-cover{
             img{
                 object-fit: cover;
@@ -609,26 +630,35 @@ section{
         }
     }
 
+    .hero-img-logo{
+        img{
+            height: 12rem;
+            width: auto;
+        }
+        margin-bottom: 2rem;
+    }
+
+
     .flow{
         padding-top: 0;
 
         .flow-heading{
-            display: flex;
-            justify-content: center;
-
-            .h2-light{ 
-                font-size:larger; 
-                color: var(--bs-primary-10);
-            }
-
-            .h2-dark{
-                font-size:larger; 
-                color: var(--bs-overlay-black);
-            }
-
+           margin-bottom: 1rem;
         }
 
-        ul{
+        .first{
+            padding: 0 0 2rem 0;
+        }
+
+        .middle{
+            padding: 2rem 0;
+        }
+        
+        .last{
+            padding: 2rem 0 3rem 0;
+        }
+
+        .thank-you{
             list-style: none;
             padding-left: 0;
             text-align: center;
@@ -646,6 +676,10 @@ section{
                 justify-content: space-evenly;
                 flex-direction: column;
                 img{ height: 28rem; }
+
+                h3{
+                    font-size: medium;
+                }
 
                 .h3-light{
                     font-size: medium;
@@ -666,6 +700,10 @@ section{
                 justify-content: space-evenly;
                 flex-direction: column;
                 img{ height: 20rem; }
+
+                h3{
+                    font-size: medium;
+                }
 
                 .h3-light{
                     font-size: medium;
@@ -688,6 +726,10 @@ section{
                 gap: 1rem;
                 img{ height: 12rem; }
 
+                h3{
+                    font-size: medium;
+                }
+
                 .h3-light{
                     font-size: medium;
                     color: var(--bs-primary-10);
@@ -698,6 +740,31 @@ section{
                     color: var(--bs-overlay-black);
                 }
         
+            }
+        }
+    }
+
+    .app{
+        .cover-images{
+            .img-sm{ 
+                img {width: 12rem;} 
+                margin-bottom: 1rem;
+            }
+        }
+
+        .flow-heading{margin-bottom: 1.5rem;}
+        .flow-img{img{ padding: 1rem 0;}}
+
+        .middle{
+            padding: 1rem 0;
+            .y-pad{ margin: 1.5rem 0;}
+            .persona{
+                h4{
+                    margin-bottom: 1rem;
+                }
+                img{
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
@@ -937,6 +1004,8 @@ section{
                 }
             }
         }
+
+        
     }
 
 }
@@ -956,7 +1025,22 @@ section{
                 padding: 1rem 0;
             }
         }
+
+        .app{
+            .cover-images{
+                .img-sm{ 
+                    img {width: 8rem;} 
+                }
+            }
+            .flow-heading{margin-bottom: 0.75rem;}
+            .flow-img{img{ padding: .75rem 0;}}
+        }   
     }
+
+    .mob-flow{
+        margin-bottom: 1rem;
+    }
+
     
 }
 
@@ -985,6 +1069,7 @@ section{
                 }
             }
         }
+        
     }
     
 }

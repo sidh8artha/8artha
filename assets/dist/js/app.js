@@ -36,7 +36,7 @@ if (links.length) {
 // Card Filter JS
 function myapp() {
     const buttons = document.querySelectorAll(".nav-link");
-    const cards = document.querySelectorAll(".design-card");
+    const cards = document.querySelectorAll(".sort-card");
   
     function filter(category, items) {
       items.forEach((item) => {
