@@ -484,6 +484,11 @@ section{
                 color: inherit;
                 text-decoration-color: inherit ;
             }
+            &:hover {
+                a{
+                    color: var(--bs-primary);
+                }
+            }
         }
         // Hover Effect
         &:hover {
@@ -506,45 +511,115 @@ section{
     }
 
     .blog-card-overlay{
-        background-color: var(--bs-blog);
+        background-color: #000000;
         border: 1px solid white;
-        // border-radius: 2px;
+        border-radius: 0;
         cursor: pointer;
+        height: 100%;
         overflow: hidden;
-        .card-body{
-            padding: 2.5rem 2.5rem 0 2.5rem;
-            .card-title{
-                margin-bottom: 0.5rem;
-                font-weight: 600;
-                font-size: large;
-            }
-            .card-subtitle{
-                margin-bottom: 0.5rem;
-                font-size: medium;
-            }
-            .card-text{
-                margin-bottom: 1rem;
-                font-size:medium;
-                height: auto;
-                opacity: 0.5;
-            }
-            .badge{
-                margin-bottom: 0.5rem;
-            }
-            .card-time{
-                margin-bottom: 0rem;
-            }
+        
+        img{
+            object-fit: fill;
+
+
         }
-        .card-footer{
-            border: 0px;
-            padding: 0 2.5rem 1.5rem 2.5rem;
-            margin-bottom: 0;
+
+        .card-img-overlay{
             display: flex;
-            justify-content: space-between;
-            background-color: transparent;
-            a{
-                color: inherit;
-                text-decoration-color: inherit ;
+            flex-direction: column;
+            padding: 0;
+            height: 100%;
+            transition: all 500ms;
+
+            .card-body{
+                padding: 2rem 0;
+                height: auto;
+                transition: all 500ms;
+                .card-header{
+                    background-color: #000000dd;
+                    color: whitesmoke;
+                    padding: 1rem 2rem 1rem 2rem;
+                    margin-bottom: 0.5rem;
+                    h4{
+                        font-weight: 600;
+                    }
+                    h6{
+                        // font-size: medium;
+                        font-weight: 200;
+                    }
+                    transition: all 500ms;
+
+                }
+                .card-content{
+                    margin-top: 2rem;
+                    padding: 0rem 2rem 0rem 2rem;
+                    opacity: 0;
+                    color: var(--bs-gray-500);
+                    .card-text{
+                        margin-bottom: 0.5rem;
+                        margin-bottom: 1rem;
+                        font-size:medium;
+                        height: auto;
+                        font-weight: 200;
+                    }
+                    .badge{
+                        margin-bottom: 0.5rem;
+                        background-color: var(--bs-primary);
+                        color: var(--bs-overlay-black);
+                        font-weight: 500;
+                    }
+                    .card-time{
+                        margin-bottom: 0rem;
+                    }
+                    transition: all 500ms;
+                }
+            }
+            .card-footer{
+                opacity: 0;
+                border: 0px;
+                padding: 0 2.5rem 1.5rem 2.5rem;
+                margin-bottom: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: transparent;
+                color: whitesmoke;
+                a{
+                    color: whitesmoke;
+                    text-decoration-color: inherit ;
+                }
+                &:hover {
+                    a{
+                        color: var(--bs-primary);
+                    }
+                }
+                transition: all 500ms;
+            }
+
+            
+        }
+        &:hover{
+            .card-img-overlay{
+                background-color: #000000dd;
+                transition: all 500ms;
+                .card-body{
+                    .card-header{
+                        background-color: transparent;
+                        transition: all 500ms;
+                        padding-bottom: 0;
+                    }
+                    .card-content{
+                        opacity: 1;
+                        margin-top: 0;
+                        transition: all 1s;
+                    }
+                }
+                .card-footer{
+                    opacity: 1;
+                    transition: all 1s;
+
+                }
+                
             }
         }
     }
