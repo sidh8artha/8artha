@@ -434,7 +434,7 @@ section{
         padding: 1rem 0 3rem 0;
     }
 
-    .design-card-overlay{
+    .design-card{
         background-color: var(--bs-smoke);
         border-radius: 0px;
         cursor: pointer;
@@ -510,26 +510,29 @@ section{
         }
     }
 
-    .blog-card-overlay{
+    .blog-card{
         background-color: #000000;
         border: 1px solid white;
         border-radius: 0;
+        border-radius: 0px;
         cursor: pointer;
-        height: 100%;
         overflow: hidden;
         
-        img{
-            object-fit: fill;
-
-
+        .card-img-box{
+            width: 100%;
+            min-height: 24rem;
+            img{
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .card-img-overlay{
-            display: flex;
-            flex-direction: column;
             padding: 0;
-            height: 100%;
             transition: all 500ms;
+            border-radius: 0;
 
             .card-body{
                 padding: 2rem 0;
@@ -537,6 +540,7 @@ section{
                 transition: all 500ms;
                 .card-header{
                     background-color: #000000dd;
+                    border-radius: 0;
                     color: whitesmoke;
                     padding: 1rem 2rem 1rem 2rem;
                     margin-bottom: 0.5rem;
@@ -544,11 +548,10 @@ section{
                         font-weight: 600;
                     }
                     h6{
-                        // font-size: medium;
+                        font-size:medium;
                         font-weight: 200;
                     }
                     transition: all 500ms;
-
                 }
                 .card-content{
                     margin-top: 2rem;
@@ -595,20 +598,16 @@ section{
                 }
                 transition: all 500ms;
             }
-
-            
-        }
-        &:hover{
-            .card-img-overlay{
+            &:hover{
                 background-color: #000000dd;
                 transition: all 500ms;
                 .card-body{
-                    .card-header{
-                        background-color: transparent;
-                        transition: all 500ms;
-                        padding-bottom: 0;
-                    }
-                    .card-content{
+                .card-header{
+                    background-color: transparent;
+                    transition: all 500ms;
+                    padding-bottom: 0;
+                }
+                .card-content{
                         opacity: 1;
                         margin-top: 0;
                         transition: all 1s;
@@ -617,54 +616,84 @@ section{
                 .card-footer{
                     opacity: 1;
                     transition: all 1s;
-
-                }
-                
+                }                
             }
+            
         }
+        
     }
 
-    .book-card-overlay{
-        background-color: var(--bs-blog);
+    .book-card{
+        background-color: white;
         border: 1px solid white;
-        // border-radius: 2px;
+        border-radius: 0px;
         cursor: pointer;
         overflow: hidden;
+        padding: 2rem 1rem;
+
+        .card-img{
+            padding: 0 6rem;
+            img{
+                object-fit:fill;
+                height:100%;
+                border-radius: 0;
+            }
+        }
+
         .card-body{
-            padding: 2.5rem 2.5rem 0 2.5rem;
+            text-align: center;
+            padding: 1rem 0;
             .card-title{
                 margin-bottom: 0.5rem;
                 font-weight: 600;
-                font-size: large;
+                font-size: larger;
+
             }
             .card-subtitle{
                 margin-bottom: 0.5rem;
                 font-size: medium;
+                font-weight: 400;
             }
             .card-text{
-                margin-bottom: 1rem;
+                // margin-bottom: 0.25rem;
                 font-size:medium;
                 height: auto;
-                opacity: 0.5;
+                opacity: 0.45;
             }
-            .badge{
-                margin-bottom: 0.5rem;
-            }
-            .card-time{
-                margin-bottom: 0rem;
-            }
+            
+            
         }
         .card-footer{
             border: 0px;
-            padding: 0 2.5rem 1.5rem 2.5rem;
+            padding: 0 1rem;
             margin-bottom: 0;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: transparent;
-            a{
-                color: inherit;
-                text-decoration-color: inherit ;
+            .card-time{
+                margin-bottom: 0rem;
+                padding: 0;
             }
+            .badge{
+                font-size: small;
+                font-weight: 400;
+                color: inherit;
+                margin-bottom: 0;
+                padding: 0;
+                border-radius: 0;
+            }
+            a{
+                padding: 0.5rem 1rem;
+                background-color: var(--bs-primary);
+                color: var(--bs-smoke);
+            &:hover{
+                background-color: var(--bs-primary);
+                color: var(--bs-smoke);
+                text-decoration: underline;
+            }
+            }
+
         }
     }
 
@@ -979,6 +1008,19 @@ section{
         }
     }
 
+    .folio{
+        .blog-card{
+            .card-img-box{
+                min-height: 28rem;
+            }        
+        }
+        .book-card{
+            .card-img{
+                padding: 0 2rem;;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1009,11 +1051,19 @@ section{
         }   
     }
 
-    .mob-flow{
-        margin-bottom: 1rem;
+    .folio{
+        .blog-card{
+            .card-img-box{
+                min-height: 25rem;
+            }
+            .card-img-overlay{
+                padding: 0;
+                .card-body{
+                    padding: 1rem 0;
+                }
+            }        
+        }
     }
-
-    
 }
 
 @media screen and (max-width: 576px) {
