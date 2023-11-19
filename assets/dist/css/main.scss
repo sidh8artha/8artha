@@ -738,6 +738,38 @@ section{
         }
     }
 
+    .coming-soon{
+        margin-top: 5.5rem;
+        padding-bottom: 0;
+
+        .case-title{
+
+            h1{
+                color: var(--bs-primary);
+                font-weight: 900;
+                font-size: 05vw;
+                margin-bottom: 1rem;
+            }
+
+            h2{
+                span{
+                    text-decoration: underline;
+                    text-decoration-color: var(--bs-primary);
+                }
+            }
+
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .case-cover{
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 70vh;
+            }
+        }
+    }
+
     .hero-img-logo{
         img{
             height: 12rem;
@@ -1006,21 +1038,14 @@ section{
                 }
             }
         }
-    }
-
-    .folio{
-        .blog-card{
-            .card-img-box{
-                min-height: 28rem;
-            }        
-        }
-        .book-card{
-            .card-img{
-                padding: 0 2rem;;
+        .coming-soon{
+            .case-title{
+                h1{
+                    font-size: 06vw;
+                }
             }
         }
     }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -1048,6 +1073,13 @@ section{
             }
             .flow-heading{margin-bottom: 0.75rem;}
             .flow-img{img{ padding: .75rem 0;}}
+        }
+        .coming-soon{
+            .case-title{
+                h1{
+                    font-size: 08vw;
+                }
+            }
         }   
     }
 
@@ -1084,7 +1116,14 @@ section{
                     img{width:60vw}
                 }
             }
-        } 
+        }
+        .coming-soon{
+            .case-title{
+                h1{
+                    font-size: 10vw;
+                }
+            }
+        }    
     }
     
 }
@@ -1129,6 +1168,13 @@ section{
                     img{width:80vw}
                 }
             }
-        } 
+        }
+        .coming-soon{
+            .case-title{
+                h1{
+                    font-size: 10vw;
+                }
+            }
+        }    
     }
 }
