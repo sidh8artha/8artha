@@ -138,6 +138,7 @@ body .btn-primary {
 }
 body .btn-primary:hover {
   background-color: var(--bs-primary);
+  text-decoration: none;
 }
 
 header .navbar {
@@ -218,34 +219,17 @@ section .section-side .section-title {
   font-size: x-large;
 }
 
-.hero .home {
-  margin-top: 4rem;
+.img-class .logo-img img {
+  width: 8rem;
+  height: 8rem;
 }
-.hero .home .hero-title {
-  padding: 25vh 0 3rem 0;
-}
-.hero .home .hero-title h1 {
-  font-weight: 900;
-  letter-spacing: -0.1rem;
-}
-.hero .home .hero-title .lead {
-  text-align: center;
-}
-.hero .home .hero-title .lead span {
-  text-decoration-line: underline;
-  text-decoration-color: var(--bs-primary);
-}
-.hero .home .hero-cover img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 80vh;
-}
+
 .hero .projects {
   margin-top: 4rem;
+  padding-right: 1.5rem;
 }
 .hero .projects .hero-title {
-  padding: 3rem 0 0 0;
+  padding: 4rem 1rem 0 0.5rem;
 }
 .hero .projects .hero-title h1 {
   font-weight: 900;
@@ -257,6 +241,13 @@ section .section-side .section-title {
 .hero .projects .hero-title .lead span {
   text-decoration-line: underline;
   text-decoration-color: var(--bs-primary);
+}
+.hero .projects .hero-cover img {
+  margin-top: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 80vh;
 }
 .hero .about {
   margin-top: 4rem;
@@ -280,6 +271,24 @@ section .section-side .section-title {
      object-fit: cover;
   width: 100%;
   height: 80vh;
+}
+
+.Text {
+  color: #3F3350;
+}
+.Text p {
+  font-weight: 300;
+  opacity: 0.65;
+}
+.Text .overview ul {
+  padding-left: 0;
+  list-style: none;
+  font-weight: 400;
+  opacity: 0.65;
+}
+.Text .list ul {
+  font-weight: 400;
+  opacity: 0.65;
 }
 
 .cards .design-card {
@@ -724,6 +733,14 @@ section .section-side .section-title {
 .cards .skill-card .card-body .badge-group .badge:hover, .cards .skill-card .card-body .badge-group .badge:focus, .cards .skill-card .card-body .badge-group .badge:active {
   background-color: var(--bs-primary);
   color: var(--bs-smoke);
+}
+.cards .flow-card img {
+  margin-bottom: 1rem;
+}
+.cards .persona-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .back-to-top {

@@ -141,6 +141,7 @@ body{
         border: 0;
         &:hover{
             background-color: var(--bs-primary);
+            text-decoration: none;
         }
     }
 }
@@ -237,12 +238,21 @@ section{
     }
 }
 
+.img-class{
+    .logo-img{
+        img{    
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+}
+
 .hero{
-    .home{
+    .projects{
         margin-top: 4rem;
-    
+        padding-right: 1.5rem;
         .hero-title{
-            padding: 25vh 0 3rem 0;
+            padding: 4rem 1rem 0 0.5rem;
             h1{
                 font-weight: 900;
                 letter-spacing: -0.1rem;
@@ -257,27 +267,11 @@ section{
         }
         .hero-cover{
             img{
+                margin-top: 2rem;
                 object-fit: cover;
                 width: 100%;
                 height: 80vh;
                 // border-radius: 2px;
-            }
-        }
-    }
-    .projects{
-        margin-top: 4rem;
-        .hero-title{
-            padding: 3rem 0 0 0;
-            h1{
-                font-weight: 900;
-                letter-spacing: -0.1rem;
-            }
-            .lead{
-                text-align: center;
-                span{
-                    text-decoration-line: underline;
-                    text-decoration-color: var(--bs-primary);
-                }
             }
         }
     }
@@ -305,6 +299,31 @@ section{
                 height: 80vh;
                 // border-radius: 2px;
             }
+        }
+    }
+}
+
+.Text{
+
+    color: #3F3350;
+    p{
+        font-weight: 300;
+        opacity: 0.65;
+    }
+
+    .overview{
+        ul{
+            padding-left: 0;
+            list-style: none;
+            font-weight: 400;
+            opacity: 0.65;
+        }
+    }
+
+    .list{
+        ul{
+            font-weight: 400;
+            opacity: 0.65;
         }
     }
 }
@@ -797,6 +816,17 @@ section{
                     }
                 }
             }
+        }
+    }
+
+    .flow-card{
+        img{margin-bottom: 1rem;}
+    }
+
+    .persona-card{
+        img{
+            width: 100%;
+            object-fit: cover;
         }
     }
 }
