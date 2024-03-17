@@ -1,0 +1,16 @@
+<div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/photo" alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Wellness Cube</h5>
+                                <p class="card-text">Health & Fitness</p>
+                                <p class="tag">App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="link" class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 

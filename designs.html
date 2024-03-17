@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <title>sidh8artha | workfolio</title>
+    <title>sidh8artha | UIUX Designs</title>
 
     <!-- Bootstrao Core CSS -->
     <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
@@ -16,14 +16,20 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/dist/css/main.css">
 
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar fixed-top" aria-label="Light offcanvas navbar">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">8artha</a>
+        <nav class="navbar" aria-label="Light offcanvas navbar">
+            <div class="container justify-content-end">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight"
                     aria-label="Toggle navigation">
@@ -31,11 +37,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight"
                     aria-labelledby="offcanvasNavbarLightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                                class="ri-close-line"></i></button>
-                    </div>
+
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <ul class="navbar-nav me-auto mb-2">
@@ -49,14 +51,10 @@
                                     <a class="nav-link" href="blogs.html">Blogs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="books.html">Reviews</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="about.html">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link"
-                                        href="https://drive.google.com/file/d/1cNS_xdXzZKyBKPwnPPIi6jiAhgb9-eF-/view?usp=sharing">Resume</a>
+                                    <a class="nav-link" id="myResume" href="#" target="_blank">Resume</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Contact</a>
@@ -64,6 +62,13 @@
                             </ul>
                         </ul>
                     </div>
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                                class="ri-close-line"></i></button>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -71,16 +76,24 @@
 
     <main>
 
-        <section class="hero text-center">
+        <section class="brand">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"> <a href="index.html" class="brand-name">8artha</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
             <div class="container projects">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 hero-title">
+                    <div class="col-md-12 hero-title">
                         <h1 class="display-4">Design . Deliver</h1>
                         <p class="lead">What my Client Wants and What Their User Needs</p>
                     </div>
                     <div class="col-md-12">
                         <div class="filter-menu">
-                            <ul class="nav nav-underline justify-content-center">
+                            <ul class="nav nav-underline">
                                 <li class=" nav-item">
                                     <a class="nav-link filter-link active" aria-current="page" data-filter="all">All</a>
                                 </li>
@@ -113,191 +126,22 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
 
-                    <!-- Wellness Cube -->
-                    <div class="col sort-card app anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/164137495?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin" style="border-radius: 0;">
-                            </iframe>
-                        </div>
-                    </div>
-
-                    <!-- Quantum shift -->
-                    <div class="col sort-card app anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/154891967?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Blerry Smart home -->
-                    <div class="col sort-card app anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191721051?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Vegan farming -->
-                    <div class="col sort-card app anime-single reveal">
-                        <iframe src="https://www.behance.net/embed/project/191730389?ilo0=1" height="360" width="100%"
-                            allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                            refererPolicy="strict-origin-when-cross-origin"></iframe>
-                    </div>
-
-                    <!-- vedant store -->
-                    <div class="col sort-card app anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191799631?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Core candles -->
-                    <div class="col sort-card web anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191719051?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Bizzsetu -->
+                    <!-- Deccan Arts -->
                     <div class="col sort-card prod anime-single reveal">
                         <div class="card design-card">
                             <div class="card-img-wrapper">
-                                <img class="card-img" src="assets/images/preview/app-preview-bizzsetu.png"
+                                <img class="card-img" src="assets/images/preview/prod-preview-deccan.png"
                                     alt="project images">
                             </div>
                             <div class="card-img-overlay">
-                                <h5 class="card-title">BizzSetu</h5>
-                                <p class="card-text">SaaS Sector</p>
-                                <a href="projects/designs/bizzsetu.html">
-                                    <div class="btn tag">Product Design</div>
-                                    <div class="btn btn-primary">View Project</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Blue home -->
-                    <div class="col sort-card web anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191806499?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Sangam Matrimony -->
-                    <div class="col sort-card web anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191807493?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Celebrare Invitation -->
-                    <div class="col sort-card web anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191805731?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Athefit -->
-                    <div class="col sort-card brand anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/164077907?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Cosa Nostra -->
-                    <div class="col sort-card brand anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/153908475?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-
-                    <!-- Deccan Arts -->
-                    <!-- <div class="col sort-card prod anime-single reveal">
-                        <div class="card design-card">
-                            <div class="card-img-wrapper">
-                                <img class="card-img" src="assets/images/preview/brand-preview-athlefit.png"
-                                    alt="project images">
-                            </div>
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Deccan Arts</h5>
-                                <p class="card-text">Book Publication Sector</p>
-                                <a href="projects/designs/deccanarts.html">
-                                    <div class="btn tag">Product Design</div>
-                                    <div class="btn btn-primary">View Project</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- The logistics -->
-                    <div class="col sort-card logo anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191725635?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Barrignton logo -->
-                    <div class="col sort-card logo anime-single reveal">
-                        <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191726095?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Order Dekho -->
-                    <!-- <div class="col sort-card prod anime-single reveal">
-                        <div class="card design-card">
-                            <div class="card-img-wrapper">
-                                <img class="card-img" src="assets/images/preview/brand-preview-athlefit.png"
-                                    alt="project images">
-                            </div>
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">OrderDekho</h5>
-                                <p class="card-text">FMCG & Finance Sector</p>
-                                <a href="https://dribbble.com/shots/23524354-OrderDekho-com-New-Era-of-Store-Credit">
-                                    <div class="btn tag">Product Design</div>
-                                    <div class="btn btn-primary">View Project</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- The great american -->
-                    <div class="col sort-card art anime-single reveal">
-                        <div class="card design-card">
-                            <div class="card-img-wrapper">
-                                <img class="card-img" src="assets/images/preview/art-preview-presidents.png"
-                                    alt="project images">
-                            </div>
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">The Great America</h5>
-                                <p class="card-text">History & Culture</p>
-                                <a href="projects/designs/the-great-america.html">
-                                    <div class="btn tag">Art & Illustrations</div>
-                                    <div class="btn btn-primary">View Project</div>
-                                </a>
+                                <h5 class="card-title">Deccan Arts Publication</h5>
+                                <p class="card-text">Book Publication</p>
+                                <p class="tag">Product Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://deccan-arts-publication.in/"
+                                        class="btn btn-primary w-auto">
+                                        View Website </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,12 +149,433 @@
                     <!-- Intello -->
                     <div class="col sort-card app anime-single reveal">
                         <div class="card design-card">
-                            <iframe src="https://www.behance.net/embed/project/191732759?ilo0=1" height="360"
-                                width="100%" allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                                refererPolicy="strict-origin-when-cross-origin">
-                            </iframe>
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/app-preview-intello.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Intello Smart Home</h5>
+                                <p class="card-text">Smart Home Industry</p>
+                                <p class="tag">Mobile App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/191732759/Intello-Smart-Home"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Blue Home -->
+                    <div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/web-preview-bluehome.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Blue Home Nursing</h5>
+                                <p class="card-text">Old Age Home</p>
+                                <p class="tag">Web Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/191806499/Blue-Home-Nursing"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order -->
+                    <div class="col sort-card prod anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/prod-preview-orderdekho.jpg"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">OrderDekho</h5>
+                                <p class="card-text">FMCG & Fintech</p>
+                                <p class="tag">Product Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://www.orderdekho.com/"
+                                        class="btn btn-primary w-auto">
+                                        View Website </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BizzSetu -->
+                    <div class="col sort-card prod anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/prod-preview-bizzsetu.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">BizzSetu</h5>
+                                <p class="card-text">B2B SaaS </p>
+                                <p class="tag">Product Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://www.bizzsetu.com/" class="btn btn-primary w-auto">
+                                        View Wesbsite </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Athefit -->
+                    <div class="col sort-card brand anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/brand-preview-athlefit.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Athefit</h5>
+                                <p class="card-text">Health & Fitness</p>
+                                <p class="tag">Brand Identity</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/164077907/Fitness-Leisure-Platform-Logo-Design-Brand-Identity"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vedant -->
+                    <div class="col sort-card app anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/app-preview-vedant.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Vedant Estore</h5>
+                                <p class="card-text">Ecommerce & FMCG</p>
+                                <p class="tag">App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://www.behance.net/gallery/191799631/Vedant-E-Store"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Celebrare -->
+                    <div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/web-preview-celebrare.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Celebrare video</h5>
+                                <p class="card-text">SaaS Product</p>
+                                <p class="tag">Web Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/191805731/Celebrare-Invitation"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- linford -->
+                    <div class="col sort-card app anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/app-preview-linford.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Blerry- Linford Automate</h5>
+                                <p class="card-text">Smart Home</p>
+                                <p class="tag">App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/191721051/Blerry-Smart-Home-System"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sangam -->
+                    <div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/web-preview-sangam.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Sangam Matrimony</h5>
+                                <p class="card-text">Matchmaking & Wedding</p>
+                                <p class="tag">Web Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://www.behance.net/gallery/191807493/Sangam-Matrimony"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Barrington -->
+                    <div class="col sort-card logo anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/logo-preview-barrington.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Barrington Attorney</h5>
+                                <p class="card-text">Low & Business</p>
+                                <p class="tag">Logo Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://dribbble.com/shots/19484648-Barrington-Legal-Responsive-Logo-design"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core -->
+                    <div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/web-preview-corecandles.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Core Candles</h5>
+                                <p class="card-text">Home Decore Small Business</p>
+                                <p class="tag">Web Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/191719051/Core-Candles-Small-Business-Webstore"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cosa -->
+                    <div class="col sort-card brand anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/brand-preview-cosa.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Cosa Nostra</h5>
+                                <p class="card-text">Bar & Cigar Lounge</p>
+                                <p class="tag">Brand Identity</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/153908475/Bar-Cigar-Launge-Brand-Identity"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shiksha -->
+                    <div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/web-preview-shiksha.jpg"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Shiksha Publication House</h5>
+                                <p class="card-text">Print Publication</p>
+                                <p class="tag">Website Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://dribbble.com/shots/15967351-Book-Publishing-Industry-Webpage-Design-1"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Farmatic -->
+                    <div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/web-preview-farmatic.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Farmatic Website</h5>
+                                <p class="card-text">Agriculture & Automation</p>
+                                <p class="tag">Web Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://farmatic.co.in/" class="btn btn-primary w-auto">
+                                        View Website </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vegan -->
+                    <div class="col sort-card app anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/app-preview-vegan.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Vegan Farming App</h5>
+                                <p class="card-text">Agriculture Automation</p>
+                                <p class="tag">App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://www.behance.net/gallery/191730389/Vegan-Farming"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Energy -->
+                    <div class="col sort-card app anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/app-preview-energyplus.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Energy Plus</h5>
+                                <p class="card-text">Smart Energy</p>
+                                <p class="tag">App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://dribbble.com/shots/17395513-Energy-Monitoring-App-UI-UX-Case-Study"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ABC -->
+                    <div class="col sort-card logo anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/logo-preview-abc.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">ABC Group</h5>
+                                <p class="card-text">Family Business</p>
+                                <p class="tag">Logo Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://dribbble.com/shots/16293718-Family-Corporation-Logo-Design-Inspiration"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wellness -->
+                    <div class="col sort-card app anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/app-preview-wellness.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Wellness Cube</h5>
+                                <p class="card-text">Health & Fitness</p>
+                                <p class="tag">App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/164137495/Wellness-Cube-App-Case-Study-Product-Based-App-Design"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantum -->
+                    <div class="col sort-card app anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/app-preview-quantumshift.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">QuantumShift Meditation</h5>
+                                <p class="card-text">Mental Wellness</p>
+                                <p class="tag">Mobile App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank"
+                                        href="https://www.behance.net/gallery/154891967/Quantumshift-Meditation-Online-Store-App"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- President -->
+                    <div class="col sort-card art anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/art-preview-presidents.png"
+                                    alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">The Great American President</h5>
+                                <p class="card-text">History & Culture</p>
+                                <p class="tag">Book Cover Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="https://dribbble.com/shots/16294776-Book-Cover-Design"
+                                        class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                    <div class="col sort-card web anime-single reveal">
+                        <div class="card design-card">
+                            <div class="card-img-wrapper">
+                                <img class="card-img" src="assets/images/preview/photo" alt="project images">
+                            </div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Wellness Cube</h5>
+                                <p class="card-text">Health & Fitness</p>
+                                <p class="tag">App Design</p>
+                                <div class="action text-end">
+                                    <a target="_blank" href="link" class="btn btn-primary w-auto">
+                                        View Project </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    -->
+
                 </div>
             </div>
         </section>
@@ -380,96 +645,6 @@
                                     <p class="card-time">6 min read</p>
                                     <a href="projects/blogs/stunning-ellora.html">Read Story</a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="cards books">
-            <div class="container">
-                <div class="section-head reveal">
-                    <h2 class="section-title">
-                        Recent Reading
-                    </h2>
-                    <a class="section-title" href="books.html">View All</a>
-                </div>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 anime-group">
-
-                    <div class="col anime-single reveal">
-                        <div class="card book-card h-100"
-                            onClick="window.location.href='projects/books/the-fellowship-of-the-ring.html';">
-                            <div class="card-img">
-                                <img src="assets/images/project/books/lordofthering-1.jpg" class="card-img-top"
-                                    alt="The Fellowship of the Ring book cover">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">The Fellowship of the Ring</h5>
-                                <h6 class="card-subtitle">J. R. R. Tolkien.</h6>
-
-                                <p class="card-text">Bilbo celebrates his eleventy-first (111th) birthday and leaves the
-                                    Shire suddenly, passing the Ring to Frodo Baggins, his cousin[a] and heir. Neither
-                                    Hobbit is aware of the Ring's origin, but the wizard Gandalf suspects it is a Ring
-                                    of Power.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div>
-                                    <p class="card-time">423* Pages</p>
-                                    <small class="badge">Fantacy</small>
-                                </div>
-                                <a target="_blank" href="https://amzn.to/3uljmaV">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col anime-single reveal">
-                        <div class="card book-card h-100"
-                            onClick="window.location.href='projects/books/the-two-towers.html';">
-                            <div class="card-img">
-                                <img src="assets/images/project/books/lordofthering-2.jpg" class="card-img-top"
-                                    alt="The Two Towers book cover">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">The Two Towers</h5>
-                                <h6 class="card-subtitle">J. R. R. Tolkien.</h6>
-
-                                <p class="card-text">A party of large Orcs, Uruk-hai, sent by Saruman, and other Orcs
-                                    sent by Sauron and led by Grishnákh, attack the Fellowship. Boromir tries to protect
-                                    Merry and Pippin from the Orcs, but they kill him and capture the two hobbits. </p>
-                            </div>
-                            <div class="card-footer">
-                                <div>
-                                    <p class="card-time">352* Pages</p>
-                                    <small class="badge">Fantacy</small>
-                                </div>
-                                <a target="_blank" href="https://amzn.to/3G4jVrX">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col anime-single reveal">
-                        <div class="card book-card h-100"
-                            onClick="window.location.href='projects/books/the-return-of-the-king.html';">
-                            <div class="card-img">
-                                <img src="assets/images/project/books/lordofthering-3.jpg" class="card-img-top"
-                                    alt="The Return of the King book cover">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">The Return of the King</h5>
-                                <h6 class="card-subtitle">J. R. R. Tolkien.</h6>
-
-                                <p class="card-text">Sauron sends a great army against Gondor. Gandalf arrives at Minas
-                                    Tirith to warn Denethor of the attack, while Théoden musters the Rohirrim to ride to
-                                    Gondor's aid.</p>
-                            </div>
-                            <div class="card-footer">
-                                <div>
-                                    <p class="card-time">416* Pages</p>
-                                    <small class="badge">Fantacy</small>
-                                </div>
-                                <a target="_blank" href="https://amzn.to/3G4vW0M">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -599,23 +774,23 @@
             </div>
         </section>
 
-        <footer class="footer">
-            <div class="container">
-                <p class="opacity-25">© 2022-2025 <span>sidh8artha</span></p>
-                <h5>Designed &amp; Developed by sidh8artha</h5>
-            </div>
-        </footer>
-
-        <a href="#" id="button" class="back-to-top"><i class="ri-arrow-drop-up-line"></i>
-        </a>
-
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="opacity-25">© 2022-2025 <span>sidh8artha</span></p>
+            <h5>Designed &amp; Developed by sidh8artha</h5>
+        </div>
+    </footer>
 
     <!--Bootstrap JS Script -->
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- animation JS script -->
     <script defer src="assets/dist/js/app.js"></script>
+
+    <!-- link JS script -->
+    <script src="assets/dist/js/resume-link.js"></script>
 
 </body>
 
