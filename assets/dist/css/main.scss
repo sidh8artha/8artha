@@ -248,7 +248,9 @@ section{
                 font-weight: 900;
                 letter-spacing: -0.1rem;
             }
-            .lead{
+            .h3-lead{
+                padding-bottom: 1rem;
+                font-weight:normal;
                 span{
                     text-decoration-line: underline;
                     text-decoration-color: var(--bs-primary);

@@ -232,7 +232,11 @@ section .section-head .section-title {
   font-weight: 900;
   letter-spacing: -0.1rem;
 }
-.hero .about .hero-title .lead span, .hero .intro .hero-title .lead span {
+.hero .about .hero-title .h3-lead, .hero .intro .hero-title .h3-lead {
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+.hero .about .hero-title .h3-lead span, .hero .intro .hero-title .h3-lead span {
   text-decoration-line: underline;
   text-decoration-color: var(--bs-primary);
 }
