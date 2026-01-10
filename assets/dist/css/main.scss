@@ -238,36 +238,50 @@ section{
 }
 
 .hero{
-    .about, .intro{
-        .hero-title{
-            min-height: 60vh;
-            display: inline-flex;
-            flex-direction: column;
-            justify-content: center;
-            h1{
-                font-weight: 900;
-                letter-spacing: -0.1rem;
-            }
-            .h3-lead{
-                padding-bottom: 1rem;
-                font-weight:normal;
-                span{
-                    text-decoration-line: underline;
-                    text-decoration-color: var(--bs-primary);
-                }
-            }
-            a{
-                width: fit-content;
+    .hero-title{
+        min-height: 40vh;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        h1{
+            font-weight: 900;
+            letter-spacing: -0.1rem;
+        }
+        .h3-lead{
+            padding-bottom: 1rem;
+            font-weight:normal;
+            span{
+            text-decoration-line: underline;
+            text-decoration-color: var(--bs-primary);
             }
         }
-        .hero-cover{
-            img{
-                object-fit: cover;
-                width: 100%;
-                height: 80vh;
-            }
+        a{
+            width: fit-content;
         }
     }
+    .hero-cover{
+        padding-top: 05vh;
+        img
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 80vh;
+            margin-bottom: 2vh;
+        }
+    }
+
+    .about-cover{
+        img
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 40vh;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+
+        }
+    }
+    
     .projects{
         .hero-title{
             display: inline-flex;
@@ -302,6 +316,7 @@ section{
         }
     }
 }
+
 
 main{
     .cards{
@@ -591,6 +606,7 @@ main{
                     width: 100%;
                     height: 100%;
                 }
+                
             }
     
             .card-img-overlay{
@@ -686,6 +702,36 @@ main{
                 
             }
             
+        }
+
+        .gallery-card{
+            
+            background-color: var(--bs-white);
+            padding: 0rem;
+            border: 0px solid var(--bs-pri-text);
+            border-radius: 0px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 1s ease;
+            .card-body{
+                text-align: center;
+                border: 0;
+                padding:0rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: 0.8s;
+                img{
+                object-fit: cover;
+                width: 100%;
+                height: 30vh;
+                }
+            }
+            // Hover Effect
+            &:hover {
+                background-color: var(--bs-pri-text);
+                transform: translateY(-1rem);
+            }
         }
     
     }
@@ -788,6 +834,13 @@ main{
 }
 
 @media screen and (max-width: 768px) {
+   .hero{
+    .about-cover{
+        img
+        {
+            height: 25vh;
+        }
+   } }
 
 }
 

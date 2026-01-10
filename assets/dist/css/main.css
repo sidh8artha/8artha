@@ -222,33 +222,45 @@ section .section-head .section-title {
   text-decoration: none;
 }
 
-.hero .about .hero-title, .hero .intro .hero-title {
-  min-height: 60vh;
+.hero .hero-title {
+  min-height: 40vh;
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
-.hero .about .hero-title h1, .hero .intro .hero-title h1 {
+.hero .hero-title h1 {
   font-weight: 900;
   letter-spacing: -0.1rem;
 }
-.hero .about .hero-title .h3-lead, .hero .intro .hero-title .h3-lead {
+.hero .hero-title .h3-lead {
   padding-bottom: 1rem;
   font-weight: normal;
 }
-.hero .about .hero-title .h3-lead span, .hero .intro .hero-title .h3-lead span {
+.hero .hero-title .h3-lead span {
   text-decoration-line: underline;
   text-decoration-color: var(--bs-primary);
 }
-.hero .about .hero-title a, .hero .intro .hero-title a {
+.hero .hero-title a {
   width: -moz-fit-content;
   width: fit-content;
 }
-.hero .about .hero-cover img, .hero .intro .hero-cover img {
+.hero .hero-cover {
+  padding-top: 5vh;
+}
+.hero .hero-cover img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 80vh;
+  margin-bottom: 2vh;
+}
+.hero .about-cover img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 40vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .hero .projects .hero-title {
   display: inline-flex;
@@ -635,6 +647,34 @@ main .cards .blog-card .card-img-overlay:hover .card-footer {
   opacity: 1;
   transition: all 1s;
 }
+main .cards .gallery-card {
+  background-color: var(--bs-white);
+  padding: 0rem;
+  border: 0px solid var(--bs-pri-text);
+  border-radius: 0px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+main .cards .gallery-card .card-body {
+  text-align: center;
+  border: 0;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.8s;
+}
+main .cards .gallery-card .card-body img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 30vh;
+}
+main .cards .gallery-card:hover {
+  background-color: var(--bs-pri-text);
+  transform: translateY(-1rem);
+}
 
 .footer {
   padding: 2rem 0 8rem 0;
@@ -720,4 +760,10 @@ main .cards .blog-card .card-img-overlay:hover .card-footer {
 }
 .modal .modal-dialog .modal-content .modal-footer {
   border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero .about-cover img {
+    height: 25vh;
+  }
 }/*# sourceMappingURL=main.css.map */
