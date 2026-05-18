@@ -14,7 +14,7 @@ html * {
 
 :root {
   scroll-behavior: smooth;
-  --bs-font:"Urbanist", sans-serif;
+  --bs-font:'Urbanist', sans-serif;
   --bs-primary: #20c997;
   --bs-primary-50: #79dfc1;
   --bs-primary-30: #bcefe0;
@@ -490,7 +490,6 @@ main .cards .social-card:hover .card-body {
 main .cards .design-card {
   background-color: var(--bs-smoke);
   border-radius: 0px;
-  cursor: pointer;
   overflow: hidden;
   transition: all 2s ease;
 }
@@ -577,7 +576,6 @@ main .cards .blog-card .card-img-overlay .card-body .card-header {
   color: whitesmoke;
   padding: 1rem 2rem 1rem 2rem;
   margin-bottom: 0.5rem;
-  transition: all 500ms;
 }
 main .cards .blog-card .card-img-overlay .card-body .card-header h4 {
   font-weight: 600;
@@ -586,12 +584,14 @@ main .cards .blog-card .card-img-overlay .card-body .card-header h6 {
   font-size: medium;
   font-weight: 200;
 }
+main .cards .blog-card .card-img-overlay .card-body .card-header {
+  transition: all 500ms;
+}
 main .cards .blog-card .card-img-overlay .card-body .card-content {
   margin-top: 2rem;
   padding: 0rem 2rem 0rem 2rem;
   opacity: 0;
   color: var(--bs-gray-500);
-  transition: all 500ms;
 }
 main .cards .blog-card .card-img-overlay .card-body .card-content .card-text {
   margin-bottom: 0.5rem;
@@ -610,6 +610,9 @@ main .cards .blog-card .card-img-overlay .card-body .card-content .badge {
 main .cards .blog-card .card-img-overlay .card-body .card-content .card-time {
   margin-bottom: 0rem;
 }
+main .cards .blog-card .card-img-overlay .card-body .card-content {
+  transition: all 500ms;
+}
 main .cards .blog-card .card-img-overlay .card-footer {
   opacity: 0;
   border: 0px;
@@ -620,7 +623,6 @@ main .cards .blog-card .card-img-overlay .card-footer {
   justify-content: space-between;
   background-color: transparent;
   color: whitesmoke;
-  transition: all 500ms;
 }
 main .cards .blog-card .card-img-overlay .card-footer a {
   color: whitesmoke;
@@ -628,6 +630,9 @@ main .cards .blog-card .card-img-overlay .card-footer a {
 }
 main .cards .blog-card .card-img-overlay .card-footer:hover a {
   color: var(--bs-primary);
+}
+main .cards .blog-card .card-img-overlay .card-footer {
+  transition: all 500ms;
 }
 main .cards .blog-card .card-img-overlay:hover {
   background-color: rgba(0, 0, 0, 0.8666666667);
